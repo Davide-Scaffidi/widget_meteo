@@ -20,29 +20,32 @@ app.factory("meteo",function($http,$q){
 
 
 app.controller('widgetController',function($scope,meteo){
-	//$scope.api = 'https://openweathermap.org/data/2.5/weather?q=';
-	//$scope.key = '&appid=b6907d289e10d714a6e88b30761fae22';
-	//url = $scope.api+$scope.city+$scope.key;
 	$scope.prendi = function(){
 		
 
 
 		meteo.get($scope.city).then(function(data){
 			$scope.weather = data;	
+			$scope.weather.sys.country = '('+ $scope.weather.sys.country +')';
+			$scope.weather.main.temp = $scope.weather.main.temp+' °C';
+			$scope.weather.main.pressure = $scope.weather.main.pressure+' atm';
+			$scope.weather.main.humidity = $scope.weather.main.humidity+' %';
+			$scope.city='';			
 		})
 		.catch(function(response){
 			console.log(response.status)
 		});
 		
-		
-		
 
-		$scope.weather.sys.country = '('+ $scope.weather.sys.country +')';
-		$scope.weather.main.temp = $scope.weather.main.temp+' °C';
-		$scope.weather.main.pressure = $scope.weather.main.pressure+' atm';
-		$scope.weather.main.humidity = $scope.weather.main.humidity+' %';
+	}
+	$scope.togli = function(){
+		$scope.weather.name = '';
+		$scope.weather.sys.country = '';
+		$scope.weather.main.temp = '';
+		$scope.weather.main.pressure = '';
+		$scope.weather.main.humidity = '';
+		$scope.city='';	
 
-		//$scope.city='';
 	}
 })
 

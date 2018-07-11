@@ -17,7 +17,7 @@
 	<div class="container" >
 		<div class="insCity">
 			<form ng-submit="prendi()">
-				<input type="text" placeholder="Search city" ng-model="city" style="   
+				<input ng-click="togli()" type="text" placeholder="Search city" ng-model="city" style="   
 					width: 145px;
     				border-radius: 5px;
     				padding: 1px;
@@ -27,12 +27,13 @@
 		</div>
 		<div ng-if="weather.weather[0].main == null" class="immagine"></div>
 		<div ng-if="weather.weather[0].main == 'Rain'" class="immagine1"></div>
-		<div ng-if="weather.weather[0].main == 'Clouds'|| weather.weather[0].main == 'Haze'|| weather.weather[0].main == 'Mist' " class="immagine2"></div>
+		<div ng-if="weather.weather[0].main == 'Clouds'|| weather.weather[0].main == 'Haze'||
+					weather.weather[0].main == 'Mist' " class="immagine2"></div>
 		<div ng-if="weather.weather[0].main == 'Clear'" class="immagine3"></div>
 
 
 		<div class='citta'>
-			<h1>{{city}} {{weather.sys.name}} {{weather.sys.country}}</h1>
+			<h1> {{city}}{{weather.name}} {{weather.sys.country}}</h1>
 		</div>
 		
 		
@@ -51,6 +52,9 @@
 			<h2>Humidity</h2>
 			<h1>{{weather.main.humidity}}</h1>
 		</div>
+	</div>
+	<div class="fine">
+		<h7>© 2018 Weather Widget. All Rights Reserved | Design by ErDaddo00</h7>
 	</div>
 </body>
 </html> 
