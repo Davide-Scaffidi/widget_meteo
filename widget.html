@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="w_meteo">
+<head>
+	<title>Tempo
+	</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="./widget_meteo/js/meteo.js"></script>
+	<link href= './widget_meteo/assets/css/style.css'rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body ng-controller="widgetController">
+
+	<div class="title">
+		<h1 >Weather Report Widget</h1>
+	</div>
+	<div class="container" >
+		<div class="insCity">
+			<form ng-submit="prendi()">
+				<input type="text" placeholder="Search city" ng-model="city" style="   
+					width: 145px;
+    				border-radius: 5px;
+    				padding: 1px;
+				">
+				<input type="submit" class="button" value="Submit">
+			</form>
+		</div>
+		<div ng-if="weather.weather[0].main == null" class="immagine"></div>
+		<div ng-if="weather.weather[0].main == 'Rain'" class="immagine1"></div>
+		<div ng-if="weather.weather[0].main == 'Clouds'|| weather.weather[0].main == 'Haze'|| weather.weather[0].main == 'Mist' " class="immagine2"></div>
+		<div ng-if="weather.weather[0].main == 'Clear'" class="immagine3"></div>
+
+
+		<div class='citta'>
+			<h1>{{city}} {{weather.sys.name}} {{weather.sys.country}}</h1>
+		</div>
+		
+		
+		<div class="temperatura">
+			<h1>Temperatura</h1>
+			<p>{{weather.main.temp}}</p>
+		</div>
+		
+		
+		<div class="pressure">
+			<h2>Pressure</h2>
+			<h1>{{weather.main.pressure}}</h1>
+		</div>
+		
+		<div class="umidita">
+			<h2>Humidity</h2>
+			<h1>{{weather.main.humidity}}</h1>
+		</div>
+	</div>
+</body>
+</html> 

@@ -1,0 +1,225 @@
+body{
+	font-family: 'Roboto';
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+p{
+	margin: 0;
+}
+
+
+.button {
+background-color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+    color: black;
+    padding: 2px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+::placeholder{
+	color: blue;
+    opacity: 1;
+}
+
+
+.title h1{
+	text-align: center;
+	color: #fff;
+}
+
+
+.container{
+	margin: 225px auto;
+	width: 500px;
+	height: 200px;
+	margin-top: 130px;
+
+}
+
+
+.insCity{
+    margin-bottom: 0px;
+    background-color: #00000070;
+    padding: 6px;
+    width: 46%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+
+.immagine{
+	width: 35%;
+	height: 100%;
+	float: left;
+	background: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Gluecksklee_%28transparent_background%292.png");
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: contain;
+	background-position: 50%;
+	border-radius: 0px 0px 0px 25px;
+	background-color: #00000070;
+}
+
+
+.immagine1{
+	width: 35%;
+	height: 100%;
+	float: left;
+	background: url("../img/rain.png");
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: contain;
+	background-position: 50%;
+	border-radius: 0px 0px 0px 25px;
+	background-color: #00000070;
+}
+
+
+.imagine h7{
+	text-align: center;
+}
+
+.immagine2{
+	width: 35%;
+	height: 100%;
+	float: left;
+	background: url("../img/cloud.png");
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: contain;
+	background-position: 50%;
+	border-radius: 0px 0px 0px 25px;
+	background-color: #00000070;
+}
+
+
+.immagine3{
+	width: 35%;
+	height: 100%;
+	float: left;
+	background: url("../img/sun.png");
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: contain;
+	background-position: 50%;
+	border-radius: 0px 0px 0px 25px;
+	background-color: #00000070;
+}
+
+
+.citta{
+	width: 56%;
+	float: left;
+	height: 50px;
+	background-color: #00000070;
+	border-radius: 0px 25px 0px 0px;
+	padding: 0em 1.1em;
+}
+
+
+.citta h1{
+	font-size: 25px;
+	font-weight: 900;
+	text-align: left;
+	margin-top: 15px;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+
+.temperatura {
+	width: 56%;
+	float: left;
+	height: 50px;
+	background-color: #00000070;
+    padding: 0em 1.1em;
+    color: #fff;
+}
+
+
+.temperatura h1{
+	float: left;
+	width: 49%;
+	font-size: 20px;
+	font-weight: 750;
+	text-align: left;
+	margin-top: 10px;
+}
+
+
+.temperatura p{
+	margin-top: 10px;
+	float: left;
+	font-size: 25px;
+	text-align: right;
+	width: 49%;
+	font-weight: 500;
+}
+
+
+.pressure{
+	width: 56%;
+	float: left;
+	height: 50px;
+	background-color: #00000070;
+    padding: 0em 1.1em;
+    color: #fff;
+}
+
+
+.pressure h1{
+	float: left;
+	width: 49%;
+	font-size: 22px;
+	font-weight: 750;
+	text-align: right;
+	margin-top: 10px;
+}
+
+
+.pressure h2{
+	float: left;
+	width: 49%;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: left;
+	margin-top: 10px;
+}
+
+
+.umidita{
+	width: 56%;
+	float: left;
+	height: 50px;
+	background-color: #00000070;
+	border-radius: 0px 0px 25px 0px;
+    padding: 0em 1.1em;
+    color: #fff;
+}
+
+
+.umidita h1{
+	float: left;
+	width: 49%;
+	font-size: 22px;
+	font-weight: 750;
+	text-align: right;
+	margin-top: 10px;
+}
+
+
+.umidita h2{
+	float: left;
+	width: 49%;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: left;
+	margin-top: 10px;
+}
