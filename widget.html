@@ -25,14 +25,16 @@
 				<input type="submit" class="button" value="Submit">
 			</form>
 		</div>
-		<div ng-if="weather.weather[0].main == null" class="immagine"></div>
-		<div ng-if="weather.weather[0].main == 'Rain'" class="immagine1" style="color: white">
-					{{weather.weather[0].description}}</div>
+		<div ng-if="weather.weather[0].main == null" class="immagine" style="color: white;
+					text-align: center;" >Wish you luck</div>
+					
+		<div ng-if="weather.weather[0].main == 'Rain'" class="immagine1" style="color: white;
+					text-align: center;" >{{weather.weather[0].description}}</div>
 		<div ng-if="weather.weather[0].main == 'Clouds'|| weather.weather[0].main == 'Haze'||
-					weather.weather[0].main == 'Mist' " class="immagine2" style="color: white" >
-					{{weather.weather[0].description}}</div>
-		<div ng-if="weather.weather[0].main == 'Clear'" class="immagine3" style="color: white" >
-					{{weather.weather[0].description}}</div>
+					weather.weather[0].main == 'Mist' " class="immagine2" style="color: white;
+					text-align: center;" >{{weather.weather[0].description}}</div>
+		<div ng-if="weather.weather[0].main == 'Clear'" class="immagine3" style="color: white;
+					text-align: center;" >{{weather.weather[0].description}}</div>
 
 
 		<div class='citta'>
