@@ -33,6 +33,7 @@ app.controller('widgetController',function($scope,meteo){
 			$scope.city='';			
 		})
 		.catch(function(response){
+			alert($scope.city+' is not a city');
 			console.log(response.status)
 		});
 		
@@ -48,6 +49,3 @@ app.controller('widgetController',function($scope,meteo){
 
 	}
 })
-
-
-
