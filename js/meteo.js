@@ -40,6 +40,7 @@ app.controller('widgetController',function($scope,meteo){
 
 	}
 	$scope.togli = function(){
+		$scope.weather.weather[0].description = '';
 		$scope.weather.name = '';
 		$scope.weather.sys.country = '';
 		$scope.weather.main.temp = '';
